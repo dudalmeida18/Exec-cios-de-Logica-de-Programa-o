@@ -1,0 +1,4 @@
+metros = float(input("Digite o valor em metros:"))
+centrimetro = metros * 100
+print("{metros:.2f} metros equivalem a{centimetos:.2f} centimetros.")  
+
