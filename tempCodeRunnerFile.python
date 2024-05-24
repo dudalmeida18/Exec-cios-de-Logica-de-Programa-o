@@ -1,4 +1,14 @@
-metros = float(input("Digite o valor em metros:"))
-centrimetro = metros * 100
-print("{metros:.2f} metros equivalem a{centimetos:.2f} centimetros.")  
-
+valor_hora = float (input("quanto você ganha por hora? "))
+horas_trabalhadas = float (input("horas trabalhadas no mês? "))
+salario_mes = (valor_hora*horas_trabalhadas)
+print(f"valor do salario no mês: ${salario_mes:.2f}")
+salario_bruto = salario_mes
+print (f"valor do salario bruto: ${salario_bruto:.2f}")
+IR = (salario_mes*8/100)
+print(f"desconto do IR (11%):${IR:.2f}")
+INSS = (salario_mes*8/100)
+print(f"desconto do sindicato (8%): ${INSS:.2f}")
+sindicato = (salario_mes*5/100)
+print(f" desconto do sinticato (5%): ${sindicato:.2f}")
+salario_liq= (salario_mes-IR-INSS-sindicato)
+print(f"valor salario liquido: ${salario_liq:.2f}") 
